@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm) -->
+<html lang="zh-CN" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>(SKU:SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.20.6">
+<link rel="shortcut icon" href="http://wiki.dfrobot.com.cn/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.dfrobot.com.cn/opensearch_desc.php" title="DFRobot Product Wiki (zh-cn)">
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki.dfrobot.com.cn/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="DFRobot Product Wiki的Atom" href="http://wiki.dfrobot.com.cn/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&feed=atom">
+<link rel="stylesheet" href="http://wiki.dfrobot.com.cn/load.php?debug=false&lang=zh-cn&modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&only=styles&skin=vector&*">
+<style>.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: df_wiki_cn:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: df_wiki_cn:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */#mw-panel.collapsible-nav .portal{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAMAAAA7MLYKAAAAS1BMVEXb29vy8vLv7+/c3NzZ2dni4uLr6+vt7e3s7Ozw8PDn5+fj4+Ph4eHd3d3f39/o6Ojl5eXp6enx8fHa2trg4ODq6urk5OTz8/PY2NjolWftAAAAO0lEQVR4XrXAhwGAMAgEQB5I71X3n9QpPHqAGZidt2e02G8yedciQkv1/YPqIpFSdzbp9tjGsd4xhwl8yuMKHhkJhm8AAAAASUVORK5CYII=) left top no-repeat;background:url(http://wiki.dfrobot.com.cn/extensions/Vector/modules/images/portal-break.png?2013-07-08T05:13:20Z) left top no-repeat!ie;padding:0.25em 0 !important;margin:-11px 9px 10px 11px}#mw-panel.collapsible-nav .portal h5{color:#4D4D4D;font-weight:normal;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAD1BMVEX////d3d2ampqxsbF5eXmCtCYvAAAAAXRSTlMAQObYZgAAADBJREFUeF6dzNEJACAMA1HdINQJCp1Ebv+ZlLYLaD4f4cbnDNi6MAO8KCHJ+7X02j3mzgMQe93HcQAAAABJRU5ErkJggg==) left center no-repeat;background:url(http://wiki.dfrobot.com.cn/extensions/Vector/modules/images/open.png?2013-07-08T05:13:20Z) left center no-repeat!ie;padding:4px 0 3px 1.5em;margin-bottom:0}#mw-panel.collapsible-nav .portal h5:hover{cursor:pointer;text-decoration:none}#mw-panel.collapsible-nav .portal h5 a{color:#4D4D4D;text-decoration:none}#mw-panel.collapsible-nav .portal .body{background:none !important;padding-top:0;display:none}#mw-panel.collapsible-nav .portal .body ul li{padding:0.25em 0} #mw-panel.collapsible-nav .portal.first h5{display:none}#mw-panel.collapsible-nav .portal.first{background-image:none;margin-top:0} #mw-panel.collapsible-nav .portal.persistent .body{display:block}#mw-panel.collapsible-nav .portal.persistent h5{background:none !important;padding-left:0.7em;cursor:default}#mw-panel.collapsible-nav .portal.persistent .body{margin-left:0.5em} #mw-panel.collapsible-nav .portal.collapsed h5{color:#0645AD;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEX///95eXnd3d2dnZ3aAo3QAAAAAXRSTlMAQObYZgAAADFJREFUeF5dyzEKACAMA0CXolNe2Id09Kl5igZahWY4AiGjZwmIuS9GEcJfY63Ix88Bol4EYP1O7JMAAAAASUVORK5CYII=) left center no-repeat;background:url(http://wiki.dfrobot.com.cn/extensions/Vector/modules/images/closed-ltr.png?2013-07-08T05:13:20Z) left center no-repeat!ie;margin-bottom:0}#mw-panel.collapsible-nav .portal.collapsed h5 a{color:#0645AD}#mw-panel.collapsible-nav .portal.collapsed h5:hover{text-decoration:underline}
+/* cache key: df_wiki_cn:resourceloader:filter:minify-css:7:3c9a14d848715f388849f1eb546bc5a4 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: df_wiki_cn:resourceloader:filter:minify-css:7:01f6c97757c2ff57bd49264900fee40c */</style>
+
+<script src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/load.php"></script><script src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/load(1).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"(SKU:SEN0014)Sharp_GP2Y0A21_红外测距传感器(10~80cm)","wgTitle":"(SKU:SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm)","wgCurRevisionId":76564,"wgArticleId":71590,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Product Manual","DFR Series","Sensors","Source","Diagram"],"wgBreakFrames":false,"wgPageContentLanguage":"zh-cn","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"(SKU:SEN0014)Sharp_GP2Y0A21_红外测距传感器(10~80cm)","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":false,"expandablesearch":false,"footercleanup":false,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"variant":"zh-cn","language":"zh-cn","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: df_wiki_cn:resourceloader:filter:minify-js:7:782507eaf9efea3119a7b3a4d0fc1b34 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script type="text/javascript" src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/load(2).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-_SKU_SEN0014_Sharp_GP2Y0A21_红外测距传感器_10_80cm skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading"><span dir="auto">(SKU:SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm)</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">来自DFRobot Product Wiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					跳转至：					<a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#mw-head">导航</a>、					<a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#p-search">搜索</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="http://wiki.dfrobot.com.cn/index.php/%E6%96%87%E4%BB%B6:GP2Y0A21.jpg" class="image"><img alt="" src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/300px-GP2Y0A21.jpg" width="300" height="300" class="thumbimage"></a>  <div class="thumbcaption"><div class="magnify"><a href="http://wiki.dfrobot.com.cn/index.php/%E6%96%87%E4%BB%B6:GP2Y0A21.jpg" class="internal" title="放大"><img src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/magnify-clip.png" width="15" height="11" alt=""></a></div>GP2Y0A21</div></div></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>目录</h2><span class="toctoggle">&nbsp;[<a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#" class="internal" id="togglelink">隐藏</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#.E7.AE.80.E4.BB.8B"><span class="tocnumber">1</span> <span class="toctext">简介</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#.E6.8A.80.E6.9C.AF.E8.A7.84.E6.A0.BC"><span class="tocnumber">2</span> <span class="toctext">技术规格</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#.E8.BF.9E.E6.8E.A5.E5.9B.BE"><span class="tocnumber">3</span> <span class="toctext">连接图</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#.E7.A4.BA.E4.BE.8B.E4.BB.A3.E7.A0.81"><span class="tocnumber">4</span> <span class="toctext">示例代码</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id=".E7.AE.80.E4.BB.8B">简介</span></h2>
+<p>GP2Y0A21是夏普红外距离传感器家族成员之一，此型号可提供80cm的探测距离,属于红外测距中的基础类产品，同样也拥有夏普在红外距离探测领域一贯的品质。
+</p><p>此传感器可以用于机器人的测距、避障以及高级的路径规划，是机器视觉及其应用领域的不错选择。
+</p><p><br> 
+</p>
+<h2> <span class="mw-headline" id=".E6.8A.80.E6.9C.AF.E8.A7.84.E6.A0.BC">技术规格</span></h2>
+<ul><li> 信号类型：模拟输出
+</li><li> 探测距离：10-80cm
+</li><li> 工作电压：4.5-5.5V
+</li><li> 标准电流消耗：30 mA
+</li><li> 接口类型：PH2.0-3P
+</li><li> 最大尺寸：40x20x13.5 mm
+</li></ul>
+<h2> <span class="mw-headline" id=".E8.BF.9E.E6.8E.A5.E5.9B.BE">连接图</span></h2>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:452px;"><a href="http://wiki.dfrobot.com.cn/index.php/%E6%96%87%E4%BB%B6:Sen0014_connect.png" class="image"><img alt="" src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/450px-Sen0014_connect.png" width="450" height="459" class="thumbimage"></a>  <div class="thumbcaption"><div class="magnify"><a href="http://wiki.dfrobot.com.cn/index.php/%E6%96%87%E4%BB%B6:Sen0014_connect.png" class="internal" title="放大"><img src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/magnify-clip.png" width="15" height="11" alt=""></a></div>Sharp GP2Y0A21  Connect</div></div></div></div>
+<h2> <span class="mw-headline" id=".E7.A4.BA.E4.BE.8B.E4.BB.A3.E7.A0.81">示例代码</span></h2>
+<pre style="color:blue">
+/******** start code ********/
+/*
+ *	created		2013-07-12
+ *	by		lisper (leyapin@gmail.com)
+ *	function	test gp2d12, read value from A0
+ *      
+ *      VCC -- VCC  
+ *      GND -- GND  
+ *      Signal -- Analog 0
+ */
+
+#define pin A0
+
+void setup () {
+        Serial.begin (9600);
+        pinMode (pin, INPUT);
+}
+
+void loop () {
+        uint16_t value = analogRead (pin);
+        uint16_t range = get_gp2d12 (value);
+        Serial.println (value);
+        Serial.print (range);
+        Serial.println (" mm");
+        Serial.println ();
+        delay (500);
+}
+
+//return distance (mm)
+uint16_t get_gp2d12 (uint16_t value) {
+        if (value &lt; 30)
+                value = 30;
+        return ((67870.0 / (value - 3.0)) - 40.0);
+}
+
+/******** end code ********/
+
+</pre>
+<p><br><br>
+<a href="http://wiki.dfrobot.com.cn/index.php/%E6%96%87%E4%BB%B6:Nextredirectltr.png" class="image"><img alt="Nextredirectltr.png" src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/Nextredirectltr.png" width="42" height="20"></a>购买 <a rel="nofollow" class="external text" href="http://www.dfrobot.com.cn/index.php?route=product/product&filter_name=SEN0014&product_id=287">GP2Y0A21 (SKU:SEN0014)</a>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 18/1000000
+Preprocessor generated node count: 40/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key df_wiki_cn:pcache:idhash:71590-0!*!*!!zh-cn!2!* and timestamp 20140720084932 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				来自“<a href="http://wiki.dfrobot.com.cn/index.php?title=(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10%7E80cm)&oldid=76564">http://wiki.dfrobot.com.cn/index.php?title=(SKU:SEN0014)Sharp_GP2Y0A21_红外测距传感器(10%7E80cm)&amp;oldid=76564</a>”				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://wiki.dfrobot.com.cn/index.php/%E7%89%B9%E6%AE%8A:%E9%A1%B5%E9%9D%A2%E5%88%86%E7%B1%BB" title="特殊:页面分类">5个分类</a>：<ul><li><a href="http://wiki.dfrobot.com.cn/index.php?title=%E5%88%86%E7%B1%BB:Product_Manual&action=edit&redlink=1" class="new" title="分类:Product Manual（页面不存在）">Product Manual</a></li><li><a href="http://wiki.dfrobot.com.cn/index.php?title=%E5%88%86%E7%B1%BB:DFR_Series&action=edit&redlink=1" class="new" title="分类:DFR Series（页面不存在）">DFR Series</a></li><li><a href="http://wiki.dfrobot.com.cn/index.php?title=%E5%88%86%E7%B1%BB:Sensors&action=edit&redlink=1" class="new" title="分类:Sensors（页面不存在）">Sensors</a></li><li><a href="http://wiki.dfrobot.com.cn/index.php?title=%E5%88%86%E7%B1%BB:Source&action=edit&redlink=1" class="new" title="分类:Source（页面不存在）">Source</a></li><li><a href="http://wiki.dfrobot.com.cn/index.php?title=%E5%88%86%E7%B1%BB:Diagram&action=edit&redlink=1" class="new" title="分类:Diagram（页面不存在）">Diagram</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>个人工具</h5>
+	<ul>
+		<li id="pt-login"><a href="http://wiki.dfrobot.com.cn/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&returnto=%28SKU%3ASEN0014%29Sharp+GP2Y0A21+%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8%2810%7E80cm%29" title="我们鼓励你登录，不过这不是强制的 [alt-shift-o]" accesskey="o">登录</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>名字空间</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki.htm" title="查看内容页面 [alt-shift-c]" accesskey="c">页面</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://wiki.dfrobot.com.cn/index.php?title=%E8%AE%A8%E8%AE%BA:(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10%7E80cm)&action=edit&redlink=1" title="有关内容页面的讨论 [alt-shift-t]" accesskey="t">讨论</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>变换</span><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>查看</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki.htm">阅读</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://wiki.dfrobot.com.cn/index.php?title=(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10%7E80cm)&action=edit" title="本页面受到保护。你可以查看其源代码。 [alt-shift-e]" accesskey="e">查看源代码</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://wiki.dfrobot.com.cn/index.php?title=(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10%7E80cm)&action=history" title="本页面过去的版本 [alt-shift-h]" accesskey="h">查看历史</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>操作</span><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">搜索</label></h5>
+	<form action="http://wiki.dfrobot.com.cn/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="在DFRobot Product Wiki中搜索 [alt-shift-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off" placeholder="搜索">			<input type="submit" name="go" value="提交" title="如果相同的标题存在的话便直接前往该页面" id="searchGoButton" class="searchButton">			<input type="submit" name="fulltext" value="搜索" title="搜索含这些文字的页面" id="mw-searchButton" class="searchButton">					<input type="hidden" name="title" value="特殊:搜索">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://www.dfrobot.com.cn/image/cache/data/logo/Components-130x130.png);" href="http://wiki.dfrobot.com.cn/index.php/%E9%A6%96%E9%A1%B5" title="访问首页"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal first persistent" id="p-navigation">
+	<h5>导航</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://wiki.dfrobot.com.cn/index.php/%E9%A6%96%E9%A1%B5" title="访问首页 [alt-shift-z]" accesskey="z">首页</a></li>
+			<li id="n-portal"><a href="http://wiki.dfrobot.com.cn/index.php/Dfrobot_wiki:%E7%A4%BE%E5%8C%BA%E4%B8%BB%E9%A1%B5" title="关于本项目，你可以做什么，在哪里找到你需要的事物">社区专页</a></li>
+			<li id="n-currentevents"><a href="http://wiki.dfrobot.com.cn/index.php/Dfrobot_wiki:%E6%96%B0%E9%97%BB%E5%8A%A8%E6%80%81" title="查看当前事件的背景信息">新闻动态</a></li>
+			<li id="n-recentchanges"><a href="http://wiki.dfrobot.com.cn/index.php/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" title="本wiki的最近更改列表 [alt-shift-r]" accesskey="r">最近更改</a></li>
+			<li id="n-randompage"><a href="http://wiki.dfrobot.com.cn/index.php/%E7%89%B9%E6%AE%8A:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2" title="载入一个随机页面 [alt-shift-x]" accesskey="x">随机页面</a></li>
+			<li id="n-help"><a href="http://wiki.dfrobot.com.cn/index.php/%E5%B8%AE%E5%8A%A9:%E7%9B%AE%E5%BD%95" title="查找帮助的地方">帮助</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal expanded" id="p-tb">
+	<h5 tabindex="2"><a href="http://wiki.dfrobot.com.cn/index.php/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)#">工具箱</a></h5>
+	<div class="body" style="display: block;">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://wiki.dfrobot.com.cn/index.php/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)" title="所有链入本页的wiki页面列表 [alt-shift-j]" accesskey="j">链入页面</a></li>
+			<li id="t-recentchangeslinked"><a href="http://wiki.dfrobot.com.cn/index.php/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10~80cm)" title="本页链入的页面的最近更改 [alt-shift-k]" accesskey="k">相关更改</a></li>
+			<li id="t-specialpages"><a href="http://wiki.dfrobot.com.cn/index.php/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2" title="所有特殊页面的列表 [alt-shift-q]" accesskey="q">特殊页面</a></li>
+			<li id="t-print"><a href="http://wiki.dfrobot.com.cn/index.php?title=(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10%7E80cm)&printable=yes" rel="alternate" title="本页面的可打印版本 [alt-shift-p]" accesskey="p">打印版本</a></li>
+			<li id="t-permalink"><a href="http://wiki.dfrobot.com.cn/index.php?title=(SKU:SEN0014)Sharp_GP2Y0A21_%E7%BA%A2%E5%A4%96%E6%B5%8B%E8%B7%9D%E4%BC%A0%E6%84%9F%E5%99%A8(10%7E80cm)&oldid=76564" title="本页面该版本的永久链接">永久链接</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> 本页面最后修改于2013年7月30日 (星期二) 19:30。</li>
+											<li id="footer-info-viewcount">此页面已被浏览过905次。</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wiki.dfrobot.com.cn/index.php/Dfrobot_wiki:%E9%9A%90%E7%A7%81%E6%9D%83%E6%94%BF%E7%AD%96" title="Dfrobot wiki:隐私权政策">隐私政策</a></li>
+											<li id="footer-places-about"><a href="http://wiki.dfrobot.com.cn/index.php/Dfrobot_wiki:%E5%85%B3%E4%BA%8E" title="Dfrobot wiki:关于">关于DFRobot Product Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://wiki.dfrobot.com.cn/index.php/Dfrobot_wiki:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" title="Dfrobot wiki:免责声明">免责声明</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/load(3).php"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","ext.vector.collapsibleNav","ext.vector.collapsibleTabs"], null, true);
+}</script><script src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/load(4).php" type="text/javascript"></script><script src="./(SKU SEN0014)Sharp GP2Y0A21 红外测距传感器(10~80cm) - DFRobot Product Wiki_files/load(5).php" type="text/javascript"></script>
+<script>if(window.mw){
+mw.loader.state({"site":"ready"});
+}</script>
+<!-- Served in 0.218 secs. -->
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
